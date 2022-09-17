@@ -1,0 +1,54 @@
+@use '../abstract/index' as a;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: a.$font-regular;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	inline-size: 100%;
+}
+
+h1 {
+	font-family: a.$font-title;
+	color: a.$very-dark-cyan;
+}
+
+h2 {
+	margin-block-end: 1.6rem;
+    font-family: a.$font-title;
+}
+
+p {
+	inline-size: 90%;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 4rem;
+	gap: 1.6rem;
+	align-items: center;
+}

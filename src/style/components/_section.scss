@@ -1,0 +1,35 @@
+@use '../abstract/index' as a;
+
+.section {
+    background-color: a.$very-pale-blue;
+    &--background {
+        position: relative;
+        background-color: white;
+        padding: 20.8rem 0;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include a.container(11.2rem 0);
+    }
+    &__image {
+        max-inline-size: 35rem;
+    }
+    &__texts {
+        margin-block-start: 4.8rem;
+        text-align: center;
+    }
+    @include a.wave("section-top-mobile-2");
+}
+
+.question {
+    position: relative;
+    @include a.wave("footer-top-mobile","section-bottom-mobile-2");
+    &__texts {
+        text-align: center;
+        @include a.container(19.2rem 0 20.8rem);
+    }
+}
+
+

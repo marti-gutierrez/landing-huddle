@@ -1,0 +1,24 @@
+@mixin container($padding: 6.4rem 0) {
+    inline-size: 90%;
+    max-inline-size: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: $padding;
+}
+
+$top-default: "section-bottom-mobile-1";
+$bottom-default: "section-top-mobile-1";
+
+
+@mixin wave($url-bottom:$bottom-default,$url-top:$top-default) {
+    $bottom: "../src/assets/images/bg-#{$url-bottom}.svg";
+    $top: "../src/assets/images/bg-#{$url-top}.svg";
+    .wave {
+        &--bottom {
+            background-image: url($bottom);
+        }
+        &--top {
+            background-image: url($top);
+        }
+    }
+}

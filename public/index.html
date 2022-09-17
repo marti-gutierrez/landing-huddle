@@ -8,29 +8,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main.css">
 <body>
-  <head class="hero">
-    <nav class="hero__nav container">
-      <figure class="hero__image-container">
-        <img src="../src/assets/images/logo.svg" alt="logo de la compañia Huddle" class="hero__logo">
+  <header class="hero">
+    <nav class="hero__nav">
+      <figure class="hero__logo">
+        <img src="../src/assets/images/logo.svg" alt="logo de la compañia Huddle" class="hero__huddle">
       </figure>
-      <a href="#" class="hero__cta">Try it free</a>
+      <a href="#" class="cta cta--hero">Try it free</a>
     </nav>
-    <section class="hero__main container">
+    <section class="hero__main">
       <div class="hero__texts">
-        <h1 class="hero__title">Build The Community Your Fans Will Love</h1>
-        <h2 class="hero__paragraph">
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p>
           Huddle re-imagines the way we build communities. You have a voice, but so does.
           your audience. Create connections with your users as you engage in genuine discussion.
-        </h2>
+        </p>
         <a href="" class="cta">
           Get Started For Free
         </a>
       </div>
       <figure class="hero__picture">
-        <img src="../src/assets/images/screen-mockups.svg" alt="imagen de una interfaz gráfica de la pantalla de una laptop" class="hero__img-page">
+        <img src="../src/assets/images/screen-mockups.svg" alt="imagen de una interfaz gráfica de la pantalla de una laptop" class="hero__img">
       </figure>
-      <footer class="hero__number">
+      <footer class="hero__numbers">
         <div class="hero__item">
           <img src="../src/assets/images/icon-communities.svg" alt="grupo de personas" class="hero__icon">
           <h3 class="hero__number">1.4k+</h3>
@@ -43,33 +44,106 @@
         </div>
       </footer>
     </section>
-  </head>
-  <!--
-  Grow Together
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
-
-  Your Users
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-  once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
-
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
-
-  Subscribe -->
+    <div class="wave wave--bottom"></div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container section__container">
+        <figure>
+          <img src="../src/assets/images/illustration-grow-together.svg" alt="personas platicando por mensajes" class="section__image">
+        </figure>
+        <div class="section__texts">
+          <h2> Grow Together</h2>
+          <p>
+            Generate meaningful discussions with your audience and build a strong, loyal community. <br>
+            Think of the insightful conversations you miss out on with a feedback form.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section section--background">
+      <div class="container section__container section__container--inverse">
+        <figure>
+          <img src="../src/assets/images/illustration-flowing-conversation.svg" alt="personas platicando en un jardin" class="section__image">
+        </figure>
+        <div class="section__texts">
+          <h2>Flowing Conversations</h2>
+          <p>
+            You wouldn't paginate a conversation in real life, so why do it online? Our threads have<br>
+            just-in-time loading for a more natural flow.
+          </p>
+        </div>
+      </div>
+    <div class="wave wave--top"></div>
+    <div class="wave wave--bottom"></div>
+    </section>
+    <section class="section">
+      <div class="container section__container">
+        <figure class="section__picture">
+          <img src="../src/assets/images/illustration-your-users.svg" alt="ilustración de personas analizando la información de sus usuarios" class="section__image">
+        </figure>
+        <div class="section__texts">
+          <h2>Your Users</h2>
+          <p>
+            It takes no time at all to integrate Huddle with your app's authentication solution. This means,<br>
+            once signed in to your app, your users can start chatting immediately.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="question">
+      <div class="question__texts container">
+        <h2>Ready To Build your Community?</h2>
+        <a href="" class="cta">Get Started For Free</a>
+      </div>
+      <div class="wave wave--top"></div>
+      <div class="wave wave--bottom"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <section class="footer__newsletter">
+        <h2>Newsletter</h2>
+        <p class="footer__paragraph">
+          To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never<br>
+          send you spam or pass on your email address
+        </p>
+        <form action="" class="footer__form">
+          <input type="email" name="email" id="email" autocomplete="email" required class="input">
+          <input type="submit" value="Subscribe" class="cta cta--input">
+        </form>
+      </section>
+      <section class="footer__content">
+        <img src="../src/assets/images/logo-white.svg" alt="logo huddle blanco" class="footer__logo">
+        <p class="footer__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia <br>
+          vestibulum a, ultrices quis sem.
+        </p>
+        <figure class="footer__contact">
+          <img src="../src/assets/images/icon-phone.svg" alt="icono de telefono">
+        </figure>
+        <figure class="footer__contact footer__contact--email">
+          <img src="../src/assets/images/icon-email.svg" alt="icono de email">
+        </figure>
+        <ul>
+          <li>
+            <a class="footer__link" href="">
+              <img src="../src/assets/images/fb.svg" alt="logo de facebook">
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="">
+              <img src="../src/assets/images/instagram.svg" alt="logo de instagram">
+            </a>
+          </li>
+          <li>
+            <a class="footer__link" href="">
+              <img src="../src/assets/images/twitter.svg" alt="logo de twitter">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
 </body>
 </html>

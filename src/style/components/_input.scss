@@ -1,0 +1,12 @@
+@use '../abstract/index' as a;
+
+.input {
+    flex: 100%;
+    padding: 1.6rem 0.45rem;
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+    font-family: a.$font-regular;
+    border: none;
+    border-radius: 0.3rem;
+    margin-block-end: 1.6rem;
+}

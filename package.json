@@ -1,0 +1,16 @@
+{
+  "name": "practica-1-landing",
+  "version": "1.0.0",
+  "description": "![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w src/style:css/"
+  },
+  "keywords": [],
+  "author": "Martin Gutierrez",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.54.8"
+  }
+}

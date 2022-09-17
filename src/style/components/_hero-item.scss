@@ -1,0 +1,12 @@
+.hero {
+    &__item {
+        margin-block-end: 3.2rem;
+        overflow: hidden;
+    }
+    &__number {
+        font-size: 5.6rem;
+    }
+    &__icon {
+        inline-size: 35%;
+    }
+}

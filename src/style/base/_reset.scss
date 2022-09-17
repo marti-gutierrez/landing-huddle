@@ -24,6 +24,9 @@ img {
 h1 {
 	font-family: a.$font-title;
 	color: a.$very-dark-cyan;
+	@include a.media-up(md) {
+		font-size: 4.8rem;
+	}
 }
 
 h2 {
@@ -31,10 +34,20 @@ h2 {
     font-family: a.$font-title;
 }
 
+h3 {
+	font-size: 5.6rem;
+	@include a.media-up(md) {
+		font-size: 8rem;
+	}
+}
+
 p {
 	inline-size: 90%;
 	margin: 0 auto;
 	line-height: 1.5;
+	@include a.media-up(md) {
+		inline-size: 70%;
+	}
 }
 
 li {

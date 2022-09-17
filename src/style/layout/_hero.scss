@@ -17,6 +17,9 @@
     &__main {
         text-align: center;
         @include a.container();
+        @include a.media-up(md) {
+            @include a.container(12.8rem 0);
+        }
 
     }
     &__texts {
@@ -35,6 +38,13 @@
         align-items: center;
         margin-block-start: 8rem;
         padding-block-end: 10rem;
+        @include a.media-up(md) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
     }
     @include a.wave();
+    @include a.media-up(md) {
+        @include a.wave('section-top-desktop-1');
+    }
 }

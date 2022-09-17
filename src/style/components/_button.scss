@@ -25,4 +25,7 @@
         border-radius: 0.4rem;
         padding: 0.96rem 0.4rem;
     }
+    @include a.media-up(md) {
+        padding: 1.6rem 3.52rem;
+    }
 }
